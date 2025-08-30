@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay - Novelty Boys Hostel</title>
+    <meta http-equiv="refresh" content="5; url=https://wa.me/9779810205408?text=Hello!%20I%20would%20like%20to%20book%20a%20stay%20at%20Novelty%20Boys%20Hostel.">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #e74c3c;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+        .countdown {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 Contact Us on WhatsApp</h1>
+        <p>You're being redirected to WhatsApp to book your stay at <strong>Novelty Boys Hostel</strong>. This helps us serve you better and respond quickly!</p>
+        <p>If you are not redirected automatically in <span id="countdown">5</span> seconds, click the button below:</p>
+        
+        <a href="https://wa.me/9779810205408?text=Hello!%20I%20would%20like%20to%20book%20a%20stay%20at%20Novelty%20Boys%20Hostel." class="whatsapp-btn" target="_blank">
+            Open WhatsApp Now
+        </a>
+        
+        <div class="countdown">Redirecting in <span id="seconds">5</span> seconds...</div>
+    </div>
+
+    <script>
+        // Countdown timer
+        let seconds = 5;
+        const countdownElement = document.getElementById('seconds');
+        
+        const interval = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(interval);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
