@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Hostel - Your Home Away From Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        #hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1200x600/2c3e50/ecf0f1?text=Welcome+to+Our+Hostel');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+            margin-bottom: 2rem;
+        }
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #c0392b;
+        }
+        section {
+            padding: 2rem 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+        .room-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .room {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+        .room img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .room-content {
+            padding: 1.5rem;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .room {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sunshine Hostel</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Welcome to Sunshine Hostel</h1>
+            <p>Affordable, comfortable, and located in the heart of the city.</p>
+            <a href="#contact" class="btn">Book Your Stay</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p>Welcome to Sunshine Hostel! We provide a friendly and budget-friendly accommodation for travelers from all over the world. Our common areas are perfect for meeting new people and sharing stories. Located just a 5-minute walk from the central station and main attractions.</p>
+            <p>Our mission is to make your stay comfortable, fun, and memorable. We offer free Wi-Fi, breakfast, and a tour desk to help you explore the city.</p>
+        </div>
+    </section>
+
+    <section id="rooms">
+        <div class="container">
+            <h2 class="section-title">Our Rooms</h2>
+            <div class="room-container">
+                <div class="room">
+                    <img src="https://placehold.co/600x400/3498db/ecf0f1?text=Dorm+Room" alt="Dormitory Room">
+                    <div class="room-content">
+                        <h3>6-Bed Dormitory</h3>
+                        <p>Cozy bunk beds with personal lockers and reading lights. Perfect for the solo traveler on a budget.</p>
+                        <p><strong>Price: $15 / night</strong></p>
+                    </div>
+                </div>
+                <div class="room">
+                    <img src="https://placehold.co/600x400/3498db/ecf0f1?text=Private+Room" alt="Private Room">
+                    <div class="room-content">
+                        <h3>Private Double Room</h3>
+                        <p>Enjoy your privacy with a comfortable double bed, ensuite bathroom, and a desk.</p>
+                        <p><strong>Price: $40 / night</strong></p>
+                    </div>
+                </div>
+                <div class="room">
+                    <img src="https://placehold.co/600x400/3498db/ecf0f1?text=Common+Area" alt="Common Area">
+                    <div class="room-content">
+                        <h3>Common Area</h3>
+                        <p>Relax in our spacious common area, equipped with a kitchen, comfy sofas, and a book exchange.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Ready to book or have a question? Reach out to us!</p>
+            <p>
+                <strong>Address:</strong> 123 Traveler's Street, City, Country<br>
+                <strong>Phone:</strong> +1 (555) 123-4567<br>
+                <strong>Email:</strong> info@sunshinehostel.com
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sunshine Hostel. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
