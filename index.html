@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novelty Boys Hostel - A Novel Place, A Familiar Feeling</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary: #2c3e50;
@@ -82,7 +82,7 @@
 
         /* Hero Section */
         #hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://github.com/noveltyboyshostel/noveltyboyshostel.github.io/blob/main/study.jpg?raw=true');
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/noveltyboyshostel/noveltyboyshostel.github.io/main/entrance.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -248,12 +248,18 @@
             background: white;
             border-radius: 10px;
             box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .amenity-item:hover {
+            transform: translateY(-5px);
         }
 
         .amenity-item i {
             font-size: 3rem;
             color: var(--accent);
             margin-bottom: 1rem;
+            display: block;
         }
 
         /* Contact Section */
@@ -321,6 +327,10 @@
             }
 
             .room-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .amenities-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -443,33 +453,28 @@
 
     <!-- Amenities Section -->
     <section id="amenities">
-               <!-- Amenities Section -->
-        <section id="amenities">
-            <div class="container">
-                <h2 class="section-title">Our Amenities</h2>
-                <div class="amenities-grid">
-                    <div class="amenity-item">
-                        <i class="fas fa-wifi fa-3x"></i>
-                        <h3>High-Speed WiFi</h3>
-                        <p>5G internet throughout the hostel</p>
-                    </div>
-                    <div class="amenity-item">
-                        <i class="fas fa-utensils fa-3x"></i>
-                        <h3>Hygienic Food</h3>
-                        <p>Quality meals served daily</p>
-                    </div>
-                    <div class="amenity-item">
-                        <i class="fas fa-parking fa-3x"></i>
-                        <h3>Secure Parking</h3>
-                        <p>Safe parking space available</p>
-                    </div>
-                    <div class="amenity-item">
-                        <i class="fas fa-book fa-3x"></i>
-                        <h3>Study Areas</h3>
-                        <p>Quiet spaces for productive studying</p>
+        <div class="container">
+            <h2 class="section-title">Our Amenities</h2>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <i class="fas fa-wifi"></i>
+                    <h3>High-Speed WiFi</h3>
+                    <p>5G internet throughout the hostel</p>
                 </div>
-            </div>
-        </section>
+                <div class="amenity-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Hygienic Food</h3>
+                    <p>Quality meals served daily</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-parking"></i>
+                    <h3>Secure Parking</h3>
+                    <p>Safe parking space available</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-book"></i>
+                    <h3>Study Areas</h3>
+                    <p>Quiet spaces for productive studying</p>
                 </div>
             </div>
         </div>
