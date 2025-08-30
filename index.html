@@ -25,7 +25,7 @@
             line-height: 1.6;
             color: #333;
             background-color: #f8f9fa;
-            padding-top: 80px;
+            padding-top: 70px;
         }
 
         .container {
@@ -39,7 +39,7 @@
         header {
             background: var(--primary);
             color: white;
-            padding: 1rem 0;
+            padding: 0.8rem 0;
             position: fixed;
             width: 100%;
             top: 0;
@@ -55,18 +55,19 @@
 
         /* Logo Image Styling */
         .logo img {
-            height: 50px;
+            height: 40px;
             width: auto;
             display: block;
         }
        
+        /* Desktop Navigation */
         nav ul {
             display: flex;
             list-style: none;
         }
 
         nav ul li {
-            margin-left: 2rem;
+            margin-left: 1.5rem;
         }
 
         nav ul li a {
@@ -74,10 +75,22 @@
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
+            font-size: 1rem;
+            padding: 0.5rem;
         }
 
         nav ul li a:hover {
             color: var(--accent);
+        }
+
+        /* Mobile Navigation */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
         }
 
         /* Hero Section */
@@ -87,18 +100,18 @@
             background-position: center;
             color: white;
             text-align: center;
-            padding: 8rem 1rem;
-            margin-bottom: 3rem;
+            padding: 4rem 1rem;
+            margin-bottom: 2rem;
         }
 
         #hero h1 {
-            font-size: 3.5rem;
+            font-size: 2.2rem;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         #hero p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-bottom: 2rem;
             max-width: 800px;
             margin-left: auto;
@@ -109,38 +122,39 @@
             display: inline-block;
             background: var(--accent);
             color: white;
-            padding: 1rem 2.5rem;
+            padding: 1rem 2rem;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1rem;
             transition: all 0.3s;
             box-shadow: var(--shadow);
+            min-width: 200px;
         }
 
         .btn:hover {
             background: #c0392b;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
         /* Sections */
         section {
-            padding: 5rem 0;
+            padding: 3rem 0;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             color: var(--dark);
-            font-size: 2.5rem;
+            font-size: 2rem;
             position: relative;
         }
 
         .section-title::after {
             content: '';
             display: block;
-            width: 80px;
+            width: 60px;
             height: 4px;
             background: var(--accent);
             margin: 15px auto;
@@ -159,9 +173,9 @@
 
         .room-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
         }
 
         .room {
@@ -173,32 +187,32 @@
         }
 
         .room:hover {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
         }
 
         .room img {
             width: 100%;
-            height: 250px;
+            height: 200px;
             object-fit: cover;
             display: block;
         }
 
         .room-content {
-            padding: 1.5rem;
+            padding: 1.2rem;
             text-align: center;
         }
 
         .room-content h3 {
             color: var(--primary);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
         }
 
         .room-content .price {
             color: var(--accent);
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: bold;
-            margin: 1rem 0;
+            margin: 0.8rem 0;
             display: block;
         }
 
@@ -209,15 +223,15 @@
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
         }
 
         .gallery-item {
-            border-radius: 10px;
+            border-radius: 8px;
             overflow: hidden;
             box-shadow: var(--shadow);
-            height: 250px;
+            height: 200px;
         }
 
         .gallery-item img {
@@ -238,13 +252,13 @@
 
         .amenities-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
             text-align: center;
         }
 
         .amenity-item {
-            padding: 2rem;
+            padding: 1.5rem;
             background: white;
             border-radius: 10px;
             box-shadow: var(--shadow);
@@ -252,14 +266,19 @@
         }
 
         .amenity-item:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
         }
 
         .amenity-item i {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: var(--accent);
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             display: block;
+        }
+
+        .amenity-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
         }
 
         /* Contact Section */
@@ -269,8 +288,8 @@
 
         .contact-info {
             text-align: center;
-            font-size: 1.1rem;
-            line-height: 2;
+            font-size: 1rem;
+            line-height: 1.8;
         }
 
         .contact-info i {
@@ -284,18 +303,20 @@
             background: var(--dark);
             color: white;
             text-align: center;
-            padding: 3rem 0;
+            padding: 2rem 0;
         }
 
         .social-links {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
 
         .social-links a {
             color: white;
-            font-size: 1.5rem;
-            margin: 0 1rem;
+            font-size: 1.3rem;
+            margin: 0 0.8rem;
             transition: color 0.3s;
+            display: inline-block;
+            padding: 0.5rem;
         }
 
         .social-links a:hover {
@@ -304,34 +325,136 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            body {
+                padding-top: 60px;
+            }
+            
             .header-container {
-                flex-direction: column;
-                text-align: center;
+                padding: 0 1rem;
+            }
+
+            .logo img {
+                height: 35px;
+            }
+
+            /* Mobile Navigation */
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                position: fixed;
+                top: 60px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 60px);
+                background: var(--primary);
+                transition: left 0.3s ease;
+                z-index: 999;
+            }
+
+            nav.active {
+                left: 0;
             }
 
             nav ul {
-                margin-top: 1rem;
-                justify-content: center;
+                flex-direction: column;
+                padding: 2rem;
             }
 
             nav ul li {
-                margin: 0 1rem;
+                margin: 0;
+                margin-bottom: 1.5rem;
+            }
+
+            nav ul li a {
+                font-size: 1.2rem;
+                padding: 1rem;
+                display: block;
+                text-align: center;
+                border-radius: 5px;
+                background: rgba(255,255,255,0.1);
+            }
+
+            /* Hero Section */
+            #hero {
+                padding: 3rem 1rem;
             }
 
             #hero h1 {
-                font-size: 2.5rem;
+                font-size: 1.8rem;
             }
 
             #hero p {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
 
-            .room-container {
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+                min-width: 180px;
+            }
+
+            /* Sections */
+            section {
+                padding: 2rem 0;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .room-container,
+            .amenities-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.8rem;
+            }
+
+            .gallery-item {
+                height: 150px;
+            }
+
+            .room img {
+                height: 180px;
+            }
+
+            .contact-info {
+                font-size: 0.9rem;
+                text-align: left;
+                padding: 0 1rem;
+            }
+
+            .contact-info p {
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
                 grid-template-columns: 1fr;
             }
             
-            .amenities-grid {
-                grid-template-columns: 1fr;
+            #hero h1 {
+                font-size: 1.6rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .room-content h3 {
+                font-size: 1.2rem;
+            }
+            
+            .social-links a {
+                margin: 0 0.5rem;
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -343,7 +466,12 @@
             <a href="#hero" class="logo">
                 <img src="https://raw.githubusercontent.com/noveltyboyshostel/noveltyboyshostel.github.io/main/logo.jpg" alt="Novelty Boys Hostel Logo">
             </a>
-            <nav>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -370,10 +498,10 @@
         <div class="container">
             <h2 class="section-title">About Us</h2>
             <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-                <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">
+                <p style="font-size: 1.1rem; margin-bottom: 1.2rem;">
                     Welcome to Novelty Boys Hostel! We provide friendly and budget-friendly accommodation for students from all over the country. Our modern facilities are perfect for comfortable living and productive studying.
                 </p>
-                <p style="font-size: 1.2rem;">
+                <p style="font-size: 1.1rem;">
                     Located just a 7-minute walk from New Baneshwor, we offer hygienic food, comfortable rooms, high-speed 5G internet, secure parking spaces, and a supportive community environment that feels like home.
                 </p>
             </div>
@@ -514,5 +642,36 @@
             <p>Designed with ❤️ by Bandre Community & Association</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+        
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            
+            // Change icon based on menu state
+            const icon = menuToggle.querySelector('i');
+            if (mainNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close menu when clicking on links
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+    </script>
 </body>
 </html>
